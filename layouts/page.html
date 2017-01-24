@@ -1,0 +1,26 @@
+{{> header }}
+  <header>
+    <a class='back-to-index' href="../index.html">&larr; Index</a>
+  </header>
+
+  <section class="hero is-dark is-bold is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        {{ site.name }}
+      </h1>
+      <h2 class="subtitle">
+        {{ title }}
+      </h2>
+    </div>
+  </div>
+</section>
+
+  <article>
+    <!-- <h1>{{ title }}</h1> -->
+    <div class="meta">
+      {{#if date}}Published: {{ date }}{{/if}}
+    </div>
+    {{{ contents }}}
+  </article>
+{{> footer }}

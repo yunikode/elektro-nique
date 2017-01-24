@@ -1,0 +1,25 @@
+{{> header }}
+  <!-- <h1>{{ site.name }}</h1> -->
+
+  <section class="hero is-dark is-bold is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        {{ site.name }}
+      </h1>
+      <h2 class="subtitle">
+        {{ blurb }}
+      </h2>
+    </div>
+  </div>
+</section>
+
+  <ul class="recent">
+    {{#each articles }}
+    <li>
+      <div class="title"><a href="{{ path }}">{{ title }}</a></div>
+      <div class="date">{{ date }}</div>
+    </li>
+    {{/each}}
+  </ul>
+{{> footer }}
