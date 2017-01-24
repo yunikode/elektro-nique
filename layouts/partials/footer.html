@@ -14,5 +14,11 @@
     </div>
   </div>
 </footer>
+<script type="text/javascript">
+  const mobileNav = document.querySelector('.nav-toggle')
+  const mobileMenu = document.querySelector('.nav-menu')
+  mobileNav.addEventListener('click', () => mobileMenu.classList.toggle('is-active'))
+  mobileMenu.addEventListener('mouseleave', () => mobileMenu.classList.remove('is-active'))
+</script>
 </body>
 </html>

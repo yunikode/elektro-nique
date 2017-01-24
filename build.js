@@ -33,6 +33,7 @@ metalsmith(__dirname)
     pattern: ['*/*/*html', '*/*html', '*html'],
     partials: {
       header: 'partials/header',
+      navbar: 'partials/navbar',
       footer: 'partials/footer'
     }
   }))
