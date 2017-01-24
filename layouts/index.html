@@ -14,12 +14,55 @@
   </div>
 </section>
 
-  <ul class="recent">
-    {{#each articles }}
-    <li>
-      <div class="title"><a href="{{ path }}">{{ title }}</a></div>
-      <div class="date">{{ date }}</div>
-    </li>
-    {{/each}}
-  </ul>
+<section class="section">
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">Entries</h1>
+        <h2 class="subtitle">
+          A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+        </h2>
+      </div>
+
+      <div class="columns">
+        {{#each articles }}
+        <div class="column is-one-third">
+
+          <div class="card">
+            <a href="{{ path }}">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image" style="height: 40px; width: 40px;">
+                    <img src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">{{ title }}</p>
+                </div>
+              </div>
+
+              <div class="content">
+                {{ blurb }}
+                <br>
+                <small>{{ date }}</small>
+              </div>
+            </div>
+          </a>
+          </div>
+        </div>
+        {{/each}}
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
 {{> footer }}

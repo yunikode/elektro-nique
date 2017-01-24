@@ -1,9 +1,10 @@
 {{> header }}
-  <header>
-    <a class='back-to-index' href="../index.html">&larr; Index</a>
-  </header>
 
-  <section class="hero is-dark is-bold is-medium">
+<header>
+  <a class='back-to-index' href="../index.html">&larr; Index</a>
+</header>
+
+<section class="hero is-dark is-bold is-medium">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -16,11 +17,12 @@
   </div>
 </section>
 
-  <article>
-    <!-- <h1>{{ title }}</h1> -->
-    <div class="meta">
-      {{#if date}}Published: {{ date }}{{/if}}
-    </div>
+<section class="section">
+  <div class="container">
+
     {{{ contents }}}
-  </article>
+
+  </div>
+</section>
+
 {{> footer }}

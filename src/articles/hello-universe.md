@@ -2,6 +2,7 @@
 title: "Hello Universe"
 date: 2016-09-30
 blurb: 'An introduction to Elektro_nique'
+category: 'information'
 ---
 
 ## Welcome to Elektro_nique
