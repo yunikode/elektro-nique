@@ -6,11 +6,13 @@
   "author": "Fiona 'zee-german' Lutzenberger",
   "dependencies": {
     "handlebars": "^4.0.5",
+    "helper-moment": "^0.2.0",
     "metalsmith": "^2.2.0",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-layouts": "^1.6.5",
     "metalsmith-markdown": "^0.2.1",
-    "metalsmith-permalinks": "^0.5.0"
+    "metalsmith-permalinks": "^0.5.0",
+    "moment": "^2.17.1"
   },
   "main": "build.js",
   "scripts": {

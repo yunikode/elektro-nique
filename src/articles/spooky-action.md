@@ -6,4 +6,8 @@ blurb: 'What would Einstein make of quantum entanglement today?'
 
 ## Spooky Action at a Distance
 
-Some lorem ipsum.
+``` css
+  body {
+    background-color: #222;
+  }
+```
